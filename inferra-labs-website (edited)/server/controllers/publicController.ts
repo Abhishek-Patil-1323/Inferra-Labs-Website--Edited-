@@ -1,11 +1,12 @@
 // server/controllers/publicController.ts
-import { Request, Response } from 'express';
-import catchAsync from '../utils/catchAsync';
+import express from 'express';
+const { Request, Response } = express;
+import catchAsync from '../utils/catchAsync.ts';
 import { 
     Department, Project, TeamMember, Event, Alumnus, Notification, 
     GalleryCategory, ResourceCategory, KnowledgeHubPost, RecruitmentEvent, 
     Achievement, Partner, RecruitmentDate
-} from '../models.js';
+} from '../models.ts';
 
 const getInitialDataHandler = async (req: Request, res: Response) => {
     const [

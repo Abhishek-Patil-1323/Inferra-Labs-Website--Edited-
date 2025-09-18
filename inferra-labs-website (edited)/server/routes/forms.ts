@@ -1,7 +1,7 @@
 // server/routes/forms.ts
 import express from 'express';
 import multer from 'multer';
-import * as formsController from '../controllers/formsController';
+import * as formsController from '../controllers/formsController.ts';
 import path from 'path';
 
 const router = express.Router();

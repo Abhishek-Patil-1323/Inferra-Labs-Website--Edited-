@@ -1,7 +1,7 @@
 // server/routes/admin.ts
 import express from 'express';
-import * as adminController from '../controllers/adminController';
-import { protect, restrictTo } from '../middleware/auth';
+import * as adminController from '../controllers/adminController.ts';
+import { protect, restrictTo } from '../middleware/auth.ts';
 
 const router = express.Router();
 

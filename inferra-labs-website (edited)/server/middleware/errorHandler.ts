@@ -1,6 +1,6 @@
 // server/middleware/errorHandler.ts
 import { Request, Response, NextFunction } from 'express';
-import AppError from '../utils/AppError';
+import AppError from '../utils/AppError.ts';
 
 export const errorHandler = (err: any, req: Request, res: Response, next: NextFunction) => {
     err.statusCode = err.statusCode || 500;

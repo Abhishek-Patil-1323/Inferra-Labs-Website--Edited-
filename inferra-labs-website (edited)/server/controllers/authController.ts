@@ -2,9 +2,9 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt, { SignOptions } from 'jsonwebtoken';
 import type { StringValue } from 'ms';
-import catchAsync from '../utils/catchAsync';
-import AppError from '../utils/AppError';
-import { User } from '../models';
+import catchAsync from '../utils/catchAsync.ts';
+import AppError from '../utils/AppError.ts';
+import { User } from '../models.ts';
 import { AdminRole } from '../../types';
 
 // FIX: Change id parameter to string to match MongoDB ObjectId.

@@ -1,6 +1,6 @@
 // server/routes/public.ts
 import express from 'express';
-import * as publicController from '../controllers/publicController';
+import * as publicController from '../controllers/publicController.ts';
 
 const router = express.Router();
 

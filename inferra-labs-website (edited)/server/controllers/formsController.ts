@@ -1,8 +1,9 @@
 // server/controllers/formsController.ts
-import { Request, Response } from 'express';
-import catchAsync from '../utils/catchAsync';
-import { ContactSubmission, Applicant } from '../models';
-import AppError from '../utils/AppError';
+import express from 'express';
+const { Request, Response } = express;
+import catchAsync from '../utils/catchAsync.ts';
+import { ContactSubmission, Applicant } from '../models.ts';
+import AppError from '../utils/AppError.ts';
 
 const handleContactFormHandler = async (req: Request, res: Response) => {
     const { name, email, message } = req.body;

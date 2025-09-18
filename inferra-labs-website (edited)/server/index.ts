@@ -4,10 +4,10 @@ import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import './db.js'; // Added .js extension
-import apiRoutes from './routes/index.js'; // Added .js extension
-import { errorHandler } from './middleware/errorHandler.js'; // Added .js extension
-import AppError from './utils/AppError.js'; // Added .js extension
+import './db.ts'; // Added .js extension
+import apiRoutes from './routes/index.ts'; // Added .js extension
+import { errorHandler } from './middleware/errorHandler.ts'; // Added .js extension
+import AppError from './utils/AppError.ts'; // Added .js extension
 
 // Load env vars from .env file
 dotenv.config();

@@ -1,6 +1,6 @@
 // server/utils/catchAsync.ts
-import { Request, Response, NextFunction } from 'express';
-
+import express from 'express';
+const { Request, Response, NextFunction } = express;
 // Define a type for our async route handlers
 type AsyncFunction = (req: Request, res: Response, next: NextFunction) => Promise<any>;
 

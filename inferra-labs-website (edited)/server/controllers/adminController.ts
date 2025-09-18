@@ -1,9 +1,9 @@
 // server/controllers/adminController.ts
 import { Request, Response } from 'express';
-import catchAsync from '../utils/catchAsync';
-import { Applicant } from '../models.js';
-import { AuthRequest } from '../middleware/auth';
-import AppError from '../utils/AppError';
+import catchAsync from '../utils/catchAsync.ts';
+import { Applicant } from '../models.ts';
+import { AuthRequest } from '../middleware/auth.ts';
+import AppError from '../utils/AppError.ts';
 
 export const getDashboardData = catchAsync(async (req: Request, res: Response) => {
     const totalApplicants = await Applicant.countDocuments();

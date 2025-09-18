@@ -2,10 +2,10 @@
 // FIX: Import express namespace to correctly extend Request type.
 import express, { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import catchAsync from '../utils/catchAsync';
-import AppError from '../utils/AppError';
-import { User } from '../models'; // Import the User model
-import { AdminRole } from '../../types';
+import catchAsync from '../utils/catchAsync.ts';
+import AppError from '../utils/AppError.ts';
+import { User } from '../models.ts'; // Import the User model
+import { AdminRole } from '../../types.ts';
 
 // Define the structure of the JWT payload
 interface JwtPayload {
